@@ -1,0 +1,587 @@
+"etl_load_drvr_key","loadtype","source","target","name","src_database_meta_data","tgt_database_meta_data","src_table_info","tgt_table_info","src_file_metadata","tgt_file_metadata","rec_ins_ts","dq_screen_id"
+1,"fileload","File","Table","test1",NULL,"{
+				 ""DBType"":""PostgresSQL"",
+				 ""Endpoint"":""localhost"",
+				 ""port"":5432,
+				 ""database"":""postgres"",
+				 ""user"":""postgres"",
+				 ""password_type"":""password"",
+				 ""password"":""csg00109"",
+				 ""schema"":""public""
+				 }",NULL,NULL,"{
+				 ""filename"":""test.txt"",
+				 ""header"":true,
+				 ""customHeader"":"""",
+				 ""filetype"":""text"",
+				 ""delimiter"":"","",
+				  ""filepath"":""/Users/guna/Study/python/load/""
+				 }",NULL,"2024-03-04 20:21:40.170089",NULL
+3,NULL,"File","Table","test2",NULL,"{
+				 ""DBType"":""PostgresSQL"",
+				 ""Endpoint"":""localhost"",
+				 ""port"":5432,
+				 ""database"":""postgres"",
+				 ""user"":""postgres"",
+				 ""password_type"":""password"",
+				 ""password"":""csg00109"",
+				 ""schema"":""public""
+				 }",NULL,"{
+								   ""tablename"":""test"",
+								    ""schema"":""public""
+								   }","{
+				 ""filename"":""test.txt"",
+				 ""header"":""no"",
+				 ""customHeader"":""name,age"",
+				 ""filetype"":""text"",
+				 ""delimiter"":"","",
+				  ""filepath"":""/Users/guna/Study/python/load/""
+				 }",NULL,"2024-03-04 20:22:13.850691",NULL
+4,"fileload","File","Table","test3",NULL,"{
+				 ""DBType"":""PostgresSQL"",
+				 ""Endpoint"":""localhost"",
+				 ""port"":5432,
+				 ""database"":""postgres"",
+				 ""user"":""postgres"",
+				 ""password_type"":""password"",
+				 ""password"":""csg00109"",
+				 ""schema"":""public""
+				 }",NULL,"{
+								   ""tablename"":""test"",
+								    ""schema"":""public""
+								   }","{
+				 ""filename"":""test.txt"",
+				 ""header"":""no"",
+				 ""customHeader"":""name,age"",
+				 ""filetype"":""text"",
+				 ""delimiter"":"","",
+				  ""filepath"":""/Users/guna/Study/python/load/""
+				 }",NULL,"2024-03-04 20:25:06.948834",NULL
+9,"fileload","table","file","test_read","{
+				 ""DBType"":""Redshift"",
+				 ""Endpoint"":""localhost"",
+				 ""port"":5432,
+				 ""database"":""postgres"",
+				 ""user"":""postgres"",
+				 ""password_type"":""password"",
+				 ""password"":""csg00109"",
+				 ""schema"":""public""
+				 }",NULL,"{
+								   ""tablename"":""test"",
+								    ""schema"":""public"",
+				 					""query"":""select * from test"",
+				 					""addcolumns"":{
+				 ""rec_ins_ts"":""current_timestamp"",
+				 ""rec_ins_user_name"":""current_user"",
+				 ""src_file_nm"":""source_filename""
+				 }
+								   }",NULL,NULL,"{
+				 ""filename"":""test.txt"",
+				 ""header"":""yes"",
+				 ""customHeader"":"""",
+				 ""filetype"":""text"",
+				 ""delimiter"":"","",
+				  ""filepath"":""/Users/guna/Study/python/load/""
+				 }","2024-03-04 22:21:15.691037",NULL
+13,"fileload","table","file","test_json","{
+				 ""DBType"":""Redshift"",
+				 ""Endpoint"":""localhost"",
+				 ""port"":5432,
+				 ""database"":""postgres"",
+				 ""user"":""postgres"",
+				 ""password_type"":""password"",
+				 ""password"":""csg00109"",
+				 ""schema"":""public""
+				 }",NULL,"{
+								   ""tablename"":""test"",
+								    ""schema"":""public"",
+				 					""query"":""select * from test""
+								   }",NULL,NULL,"{
+				 ""filename"":""test.json"",
+				 ""header"":""yes"",
+				 ""customHeader"":"""",
+				 ""filetype"":""json"",
+				 ""delimiter"":"","",
+				  ""filepath"":""/Users/guna/Study/python/load/""
+				 }","2024-03-04 22:39:44.97012",NULL
+18,"fileload","File","Table","test",NULL,"{
+				 ""DBType"":""PostgresSQL"",
+				 ""Endpoint"":""localhost"",
+				 ""port"":5432,
+				 ""database"":""postgres"",
+				 ""user"":""postgres"",
+				 ""password_type"":""password"",
+				 ""password"":""csg00109"",
+				 ""schema"":""public""
+				 }",NULL,"{
+								   ""tablename"":""test"",
+								    ""schema"":""public"",
+				 					""encoding"":""utf-8"",
+				 					""loadtype"":""copy"",
+				 					""addcolumns"":{
+				 ""rec_ins_ts"":""current_timestamp"",
+				 ""rec_ins_user_name"":""current_user"",
+				 ""src_file_nm"":""source_filename""
+				 }
+								   }","{
+				 ""filename"":""test.txt"",
+				 ""header"":""yes"",
+				 ""customHeader"":"""",
+				 ""filetype"":""text"",
+				 ""delimiter"":"","",
+				  ""filepath"":""/Users/guna/Study/python/load/""
+				 }",NULL,"2024-03-05 18:56:37.983545",NULL
+23,"fileload","File","Table","test_mysql",NULL,"{
+				 ""DBType"":""MySQL"",
+				 ""hostname"":""localhost"",
+				 ""database"":""demo"",
+				 ""user"":""root"",
+				 ""password_type"":""password"",
+				 ""password"":""12345678""
+				 }",NULL,"{
+								   ""tablename"":""test"",
+				 					""loadtype"":""copy"",
+				 					""addcolumns"":{
+				 ""rec_ins_ts"":""current_timestamp"",
+				 ""rec_ins_user_name"":""current_user"",
+				 ""src_file_nm"":""source_filename""
+				 }
+								   }","{
+				 ""filename"":""test.txt"",
+				 ""header"":""yes"",
+				 ""customHeader"":"""",
+				 ""filetype"":""text"",
+				 ""delimiter"":"","",
+				  ""filepath"":""/Users/guna/Study/python/load/""
+				 }",NULL,"2024-03-05 21:00:56.34247",NULL
+25,"fileload","Table","File","test_mysql_read","{
+				 ""DBType"":""MySQL"",
+				 ""hostname"":""localhost"",
+				 ""database"":""demo"",
+				 ""user"":""root"",
+				 ""password_type"":""password"",
+				 ""password"":""12345678""
+				 }",NULL,"{
+								   ""tablename"":""test"",
+				 					""query"":""select * from test""
+								   }",NULL,NULL,"{
+				 ""filename"":""test1.txt"",
+				 ""header"":""yes"",
+				 ""customHeader"":"""",
+				 ""filetype"":""text"",
+				 ""delimiter"":"","",
+				  ""filepath"":""/Users/guna/Study/python/load/""
+				 }","2024-03-05 21:25:25.540104",NULL
+29,"fileload","File","Table","test_aws_r",NULL,"{
+				 ""DBType"":""RedShift"",
+				 ""hostname"":""demo.243496286433.us-east-1.redshift-serverless.amazonaws.com"",
+				 ""database"":""dev"",
+				 ""user"":""admin"",
+				 ""password_type"":""password"",
+				 ""password"":""Csg00109"",
+				 ""port"":5439
+				 }",NULL,"{
+								   ""tablename"":""test"",
+				 					""loadtype"":""copy"",
+				 					""addcolumns"":{
+				 ""rec_ins_ts"":""current_timestamp"",
+				 ""rec_ins_user_name"":""current_user"",
+				 ""src_file_nm"":""source_filename""
+				 }
+								   }","{
+				 ""filename"":""test.txt"",
+				 ""header"":""yes"",
+				 ""customHeader"":"""",
+				 ""filetype"":""text"",
+				 ""delimiter"":"","",
+				  ""filepath"":""/Users/guna/Study/python/load/""
+				 }",NULL,"2024-03-05 22:52:51.466625",NULL
+32,"fileload","Table","file","test_aws_r_read","{
+				 ""DBType"":""RedShift"",
+				 ""hostname"":""demo.243496286433.us-east-1.redshift-serverless.amazonaws.com"",
+				 ""database"":""dev"",
+				 ""user"":""admin"",
+				 ""password_type"":""password"",
+				 ""password"":""Csg00109"",
+				 ""port"":5439
+				 }",NULL,"{
+								   ""tablename"":""test"",
+				 					""query"":""select * from test""
+								   }",NULL,NULL,"{
+				 ""filename"":""test.txt"",
+				 ""header"":""yes"",
+				 ""customHeader"":"""",
+				 ""filetype"":""text"",
+				 ""delimiter"":"","",
+				  ""filepath"":""/Users/guna/Study/python/load/""
+				 }","2024-03-05 23:10:41.874824",NULL
+35,"fileload","File","Table","test_secret",NULL,"{
+				 ""DBType"":""PostgresSQL"",
+				 ""hostname"":""localhost"",
+				 ""port"":5432,
+				 ""database"":""postgres"",
+				 ""user"":""postgres"",
+				 ""password_type"":""secret"",
+				 ""secret_name"":""pg_password"",
+				 ""password"":"""",
+				 ""schema"":""public""
+				 }",NULL,"{
+								   ""tablename"":""test"",
+								    ""schema"":""public"",
+				 					""encoding"":""utf-8"",
+				 					""loadtype"":""copy"",
+				 					""addcolumns"":{
+				 ""rec_ins_ts"":""current_timestamp"",
+				 ""rec_ins_user_name"":""current_user"",
+				 ""src_file_nm"":""source_filename""
+				 }
+								   }","{
+				 ""filename"":""test.txt"",
+				 ""header"":""yes"",
+				 ""customHeader"":"""",
+				 ""filetype"":""text"",
+				 ""delimiter"":"","",
+				  ""filepath"":""/Users/guna/Study/python/load/""
+				 }",NULL,"2024-03-06 11:57:55.964605",NULL
+36,"fileload","File","Table","test_secret_t",NULL,"{
+				 ""DBType"":""PostgresSQL"",
+				 ""hostname"":""localhost"",
+				 ""port"":5432,
+				 ""database"":""postgres"",
+				 ""user"":""postgres"",
+				 ""password_type"":""secret"",
+				 ""secret_name"":""pg_password"",
+				 ""password"":"""",
+				 ""schema"":""public""
+				 }",NULL,"{
+								   ""tablename"":""test"",
+								    ""schema"":""public"",
+				 					""encoding"":""utf-8"",
+				 					""loadtype"":""copy"",
+				 					""addcolumns"":{
+				 ""rec_ins_ts"":""current_timestamp"",
+				 ""rec_ins_user_name"":""current_user"",
+				 ""src_file_nm"":""source_filename""
+				 }
+								   }","{
+				 ""filename"":""test.txt1"",
+				 ""header"":""yes"",
+				 ""customHeader"":"""",
+				 ""filetype"":""text"",
+				 ""delimiter"":"","",
+				  ""filepath"":""/Users/guna/Study/python/load/""
+				 }",NULL,"2024-03-06 16:16:07.590912",NULL
+37,"fileload","File","Table","test_secret_file_read",NULL,"{
+				 ""DBType"":""PostgresSQL"",
+				 ""hostname"":""localhost"",
+				 ""port"":5432,
+				 ""database"":""postgres"",
+				 ""user"":""postgres"",
+				 ""password_type"":""secret"",
+				 ""secret_name"":""pg_password"",
+				 ""password"":"""",
+				 ""schema"":""public""
+				 }",NULL,"{
+								   ""tablename"":""test"",
+								    ""schema"":""public"",
+				 					""encoding"":""utf-8"",
+				 					""loadtype"":""copy"",
+				 					""addcolumns"":{
+				 ""rec_ins_ts"":""current_timestamp"",
+				 ""rec_ins_user_name"":""current_user"",
+				 ""src_file_nm"":""source_filename""
+				 }
+								   }","{
+				 ""filename"":""test*.txt"",
+				 ""header"":""yes"",
+				 ""customHeader"":"""",
+				 ""filetype"":""text"",
+				 ""delimiter"":"","",
+				  ""filepath"":""/Users/guna/Study/python/load/""
+				 }",NULL,"2024-03-06 16:45:18.493054",NULL
+40,"fileload","Table","File","test_secret_file_w","{
+				 ""DBType"":""PostgresSQL"",
+				 ""hostname"":""localhost"",
+				 ""port"":5432,
+				 ""database"":""postgres"",
+				 ""user"":""postgres"",
+				 ""password_type"":""secret"",
+				 ""secret_name"":""pg_password"",
+				 ""password"":"""",
+				 ""schema"":""public""
+				 }",NULL,"{
+								   ""tablename"":""test"",
+								    ""schema"":""public"",
+				 					""encoding"":""utf-8"",
+				 					""loadtype"":""copy"",
+				 					""query"":""select * from test""
+				 					
+								   }",NULL,NULL,"{
+				 ""filename"":""test_YYYYMMDD.txt"",
+				 ""header"":""yes"",
+				 ""customHeader"":"""",
+				 ""filetype"":""text"",
+				 ""delimiter"":"","",
+				  ""filepath"":""/Users/guna/Study/python/load/""
+				 }","2024-03-06 16:55:56.72846",NULL
+41,"fileload","Table","File","test_secret_file_w_s3","{
+				 ""DBType"":""PostgresSQL"",
+				 ""hostname"":""localhost"",
+				 ""port"":5432,
+				 ""database"":""postgres"",
+				 ""user"":""postgres"",
+				 ""password_type"":""secret"",
+				 ""secret_name"":""pg_password"",
+				 ""password"":"""",
+				 ""schema"":""public""
+				 }",NULL,"{
+								   ""tablename"":""test"",
+								    ""schema"":""public"",
+				 					""encoding"":""utf-8"",
+				 					""loadtype"":""copy"",
+				 					""query"":""select * from test""
+				 					
+								   }",NULL,NULL,"{
+				 ""filename"":""test_YYYYMMDD.txt"",
+				 ""header"":""yes"",
+				 ""customHeader"":"""",
+				 ""filetype"":""text"",
+				 ""delimiter"":"","",
+				 ""filepath"":"""",
+				 ""upload_type"":""S3"",
+				 ""bucket_name"":""task-12"",
+				 ""s3_path"":""""
+				 }","2024-03-06 17:18:00.216099",NULL
+45,"fileload","File","Table","test_secret_file_rr_s3",NULL,"{
+				 ""DBType"":""PostgresSQL"",
+				 ""hostname"":""localhost"",
+				 ""port"":5432,
+				 ""database"":""postgres"",
+				 ""user"":""postgres"",
+				 ""password_type"":""secret"",
+				 ""secret_name"":""pg_password"",
+				 ""password"":"""",
+				 ""schema"":""public""
+				 }",NULL,"{
+								   ""tablename"":""test"",
+								    ""schema"":""public"",
+				 					""encoding"":""utf-8"",
+				 					""loadtype"":""copy"",
+				 					""addcolumns"":{
+				 ""rec_ins_ts"":""current_timestamp"",
+				 ""rec_ins_user_name"":""current_user"",
+				 ""src_file_nm"":""source_filename"",
+				 ""crc"":""crc""
+				 }
+				 					
+								   }","{
+				 ""filename"":""test_*.txt"",
+				 ""header"":""yes"",
+				 ""customHeader"":"""",
+				 ""filetype"":""text"",
+				 ""delimiter"":"","",
+				 ""filepath"":"""",
+				 ""source"":""S3"",
+				 ""bucket_name"":""task-12"",
+				 ""s3_path"":""""
+				 }",NULL,"2024-03-06 18:44:34.97432",NULL
+49,"debatch","Table","debatch","test_debatch","{
+				 ""DBType"":""PostgresSQL"",
+				 ""hostname"":""localhost"",
+				 ""port"":5432,
+				 ""database"":""postgres"",
+				 ""user"":""postgres"",
+				 ""password_type"":""password"",
+				 ""password"":""csg00109"",
+				 ""schema"":""public""
+				 }",NULL,"{
+								   ""tablename"":""test"",
+				 					""query"":""select * from test""
+								   }",NULL,NULL,NULL,"2024-03-08 19:23:53.55495",NULL
+50,"debatch","Table","debatch","test_Debatch","{
+				 ""DBType"":""PostgresSQL"",
+				 ""hostname"":""localhost"",
+				 ""port"":5432,
+				 ""database"":""postgres"",
+				 ""user"":""postgres"",
+				 ""password_type"":""password"",
+				 ""password"":""csg00109"",
+				 ""schema"":""public""
+				 }",NULL,"{
+								   ""tablename"":""test"",
+				 					""query"":""select * from test""
+								   }",NULL,NULL,NULL,"2024-03-08 21:53:12.981029",NULL
+55,"filetotable","file","table","dq_checks",NULL,"{
+				 ""DBType"":""PostgresSQL"",
+				 ""hostname"":""localhost"",
+				 ""port"":5432,
+				 ""database"":""postgres"",
+				 ""user"":""postgres"",
+				 ""password_type"":""password"",
+				 ""password"":""csg00109"",
+				 ""schema"":""public""
+				 }",NULL,"{
+								   ""tablename"":""test"",
+								    ""schema"":""public"",
+				 					""encoding"":""utf-8"",
+				 					""loadtype"":""copy"",
+				 					""addcolumns"":{
+				 ""rec_ins_ts"":""current_timestamp"",
+				 ""rec_ins_user_name"":""current_user"",
+				 ""src_file_nm"":""source_filename"",
+				 ""crc"":""crc""
+				 }}","{
+				 ""filename"":""test_dq_*.txt"",
+				 ""header"":true,
+				 ""customHeader"":"""",
+				 ""source"":""local"",
+				 ""filetype"":""text"",
+				 ""delimiter"":"","",
+				  ""filepath"":""/Users/guna/Study/python/load/""
+				 }",NULL,"2024-03-31 22:15:17.535446",1
+56,"filetotable","file","table","archive",NULL,"{
+				 ""DBType"":""PostgresSQL"",
+				 ""hostname"":""localhost"",
+				 ""port"":5432,
+				 ""database"":""postgres"",
+				 ""user"":""postgres"",
+				 ""password_type"":""password"",
+				 ""password"":""csg00109"",
+				 ""schema"":""public""
+				 }",NULL,"{
+								   ""tablename"":""test"",
+								    ""schema"":""public"",
+				 					""encoding"":""utf-8"",
+				 					""loadtype"":""copy"",
+				 					""addcolumns"":{
+				 ""rec_ins_ts"":""current_timestamp"",
+				 ""rec_ins_user_name"":""current_user"",
+				 ""src_file_nm"":""source_filename"",
+				 ""crc"":""crc""
+				 }}","{
+				 ""filename"":""test_dq_*.txt"",
+				 ""header"":true,
+				 ""customHeader"":"""",
+				 ""source"":""local"",
+				 ""filetype"":""text"",
+				 ""delimiter"":"","",
+				  ""filepath"":""/Users/guna/Study/python/load/"",
+				 ""archive_path"":""/Users/guna/Study/python/load/archive/""
+				 }",NULL,"2024-04-07 00:05:18.06342",1
+57,"filetotable","file","table","json",NULL,"{
+				 ""DBType"":""PostgresSQL"",
+				 ""hostname"":""localhost"",
+				 ""port"":5432,
+				 ""database"":""postgres"",
+				 ""user"":""postgres"",
+				 ""password_type"":""password"",
+				 ""password"":""csg00109"",
+				 ""schema"":""public""
+				 }",NULL,"{
+								   ""tablename"":""test"",
+								    ""schema"":""public"",
+				 					""encoding"":""utf-8"",
+				 					""loadtype"":""copy"",
+				 					""addcolumns"":{
+				 ""rec_ins_ts"":""current_timestamp"",
+				 ""rec_ins_user_name"":""current_user"",
+				 ""src_file_nm"":""source_filename"",
+				 ""crc"":""crc""
+				 }}","{
+				 ""filename"":""test_json_*.txt"",
+				 ""header"":true,
+				 ""customHeader"":"""",
+				 ""source"":""local"",
+				 ""filetype"":""json"",
+				  ""filepath"":""/Users/guna/Study/python/load/""
+				 
+				 }",NULL,"2024-04-07 00:23:07.82166",1
+58,"filetotable","file","table","json_h",NULL,"{
+				 ""DBType"":""PostgresSQL"",
+				 ""hostname"":""localhost"",
+				 ""port"":5432,
+				 ""database"":""postgres"",
+				 ""user"":""postgres"",
+				 ""password_type"":""password"",
+				 ""password"":""csg00109"",
+				 ""schema"":""public""
+				 }",NULL,"{
+								   ""tablename"":""test"",
+								    ""schema"":""public"",
+				 					""encoding"":""utf-8"",
+				 					""loadtype"":""copy"",
+				 					""addcolumns"":{
+				 ""rec_ins_ts"":""current_timestamp"",
+				 ""rec_ins_user_name"":""current_user"",
+				 ""src_file_nm"":""source_filename"",
+				 ""crc"":""crc""
+				 }}","{
+				 ""filename"":""test_json_*.txt"",
+				 ""header"":true,
+				 ""customHeader"":""name,age"",
+				 ""source"":""local"",
+				 ""filetype"":""json"",
+				  ""filepath"":""/Users/guna/Study/python/load/""
+				 
+				 }",NULL,"2024-04-07 00:29:35.880242",1
+68,"filetotable","file","table","a_s3",NULL,"{
+				 ""DBType"":""PostgresSQL"",
+				 ""hostname"":""localhost"",
+				 ""port"":5432,
+				 ""database"":""postgres"",
+				 ""user"":""postgres"",
+				 ""password_type"":""password"",
+				 ""password"":""csg00109"",
+				 ""schema"":""public""
+				 }",NULL,"{
+								   ""tablename"":""test"",
+								    ""schema"":""public"",
+				 					""encoding"":""utf-8"",
+				 					""loadtype"":""copy"",
+				 					""addcolumns"":{
+				 ""rec_ins_ts"":""current_timestamp"",
+				 ""rec_ins_user_name"":""current_user"",
+				 ""src_file_nm"":""source_filename"",
+				 ""crc"":""crc""
+				 }}","{
+				 ""filename"":""test_*.txt"",
+				 ""header"":""yes"",
+				 ""customHeader"":"""",
+				 ""filetype"":""text"",
+				 ""delimiter"":"","",
+				 ""filepath"":"""",
+				 ""source"":""S3"",
+				 ""bucket_name"":""task-12"",
+				 ""s3_path"":""in/"",
+				 ""archive_path"":""archive/""
+				 }",NULL,"2024-04-07 12:12:12.414247",0
+69,"filetotable","file","table","demo_read_file",NULL,"{
+				 ""DBType"":""PostgresSQL"",
+				 ""hostname"":""localhost"",
+				 ""port"":5432,
+				 ""database"":""postgres"",
+				 ""user"":""postgres"",
+				 ""password_type"":""password"",
+				 ""password"":""csg00109"",
+				 ""schema"":""public""
+				 }",NULL,"{
+								   ""tablename"":""test"",
+								    ""schema"":""public"",
+				 					""encoding"":""utf-8"",
+				 					""loadtype"":""copy"",
+				 					""addcolumns"":{
+				 ""rec_ins_ts"":""current_timestamp"",
+				 ""rec_ins_user_name"":""current_user"",
+				 ""src_file_nm"":""source_filename"",
+				 ""crc"":""crc""
+				 }}","{
+				 ""filename"":""test_*.txt"",
+				 ""header"":""yes"",
+				 ""customHeader"":"""",
+				 ""filetype"":""text"",
+				 ""delimiter"":"","",
+				 ""filepath"":"""",
+				 ""source"":""S3"",
+				 ""bucket_name"":""task-12"",
+				 ""s3_path"":""in/"",
+				 ""archive_path"":""archive/""
+				 }",NULL,"2024-04-07 13:54:39.286355",1
