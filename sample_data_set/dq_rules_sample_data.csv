@@ -1,0 +1,4 @@
+"rule_id","rule_name","rule_ds","screen_id","rule_type","rule_query","rec_ins_ts"
+1,"validating age","validating age",1,"filter","select * from demo_read_file where age>20","2024-04-01 21:45:48.423452"
+4,"validating age","validating age",1,"profile","select * from demo_read_file where age>20","2024-04-06 13:30:56.016079"
+3,"Validating Name","validating age",1,"filter","select * from demo_read_file where name='Bala'","2024-04-02 11:12:04.210064"
