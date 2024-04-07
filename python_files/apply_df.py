@@ -113,11 +113,11 @@ class DQValidation:
             self.cursor.execute(update_query)    
             logging(logtype=Log.info,msg='DQ Completed')
             if(rowDQCount):
-                awsFunctions.sendMail(toMail=self.screen['email'],fromMail='GUNATWIN6@gmail.com',sub='Row DQ Alert',
+                awsFunctions.sendMail(toMail=self.screen['email'],fromMail='email',sub='Row DQ Alert',
                                   body=f"""Hi,\n \nWe got Row DQ records for flow {self.screen['screen_name']}
                                                 \nCount- {rowDQCount} \nPath - {rope}""",AWS_REGION='us-east-1')
             if(profileDQCount):
-                awsFunctions.sendMail(toMail=self.screen['email'],fromMail='GUNATWIN6@gmail.com',sub='Profile DQ Alert',
+                awsFunctions.sendMail(toMail=self.screen['email'],fromMail='email',sub='Profile DQ Alert',
                                   body=f"""Hi,\n \nWe got Profile DQ records for flow {self.screen['screen_name']}
                                                 \nCount - {profileDQCount}""",AWS_REGION='us-east-1')
             if(filtered_df is None):

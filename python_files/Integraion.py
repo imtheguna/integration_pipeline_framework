@@ -235,7 +235,7 @@ except Exception as e:
     logmetadata.setStatus(status='Failed')
     logmetadata.setProcessEndTime(commonFunctions.getCurrentDateTime('%Y-%m-%d %H:%M:%S'))
 
-    awsFunctions.sendMail(toMail='GUNATWIN6@gmail.com',fromMail='GUNATWIN6@gmail.com',sub='The Pipeline got failed',
+    awsFunctions.sendMail(toMail='<email>',fromMail='<email>',sub='The Pipeline got failed',
                                   body=f"""Hi,\n \n The {load_name} pipeline got failed with error - {error} \n \n Time - {commonFunctions.getCurrentDateTime('%Y-%m-%d %H:%M:%S')}
 """,AWS_REGION='us-east-1')
 
