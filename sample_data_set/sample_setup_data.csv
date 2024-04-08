@@ -6,7 +6,7 @@
 				 ""database"":""postgres"",
 				 ""user"":""postgres"",
 				 ""password_type"":""password"",
-				 ""password"":""csg00109"",
+				 ""password"":""***"",
 				 ""schema"":""public""
 				 }",NULL,NULL,"{
 				 ""filename"":""test.txt"",
@@ -23,7 +23,7 @@
 				 ""database"":""postgres"",
 				 ""user"":""postgres"",
 				 ""password_type"":""password"",
-				 ""password"":""csg00109"",
+				 ""password"":""***"",
 				 ""schema"":""public""
 				 }",NULL,"{
 								   ""tablename"":""test"",
@@ -43,7 +43,7 @@
 				 ""database"":""postgres"",
 				 ""user"":""postgres"",
 				 ""password_type"":""password"",
-				 ""password"":""csg00109"",
+				 ""password"":""***"",
 				 ""schema"":""public""
 				 }",NULL,"{
 								   ""tablename"":""test"",
@@ -63,7 +63,7 @@
 				 ""database"":""postgres"",
 				 ""user"":""postgres"",
 				 ""password_type"":""password"",
-				 ""password"":""csg00109"",
+				 ""password"":""***"",
 				 ""schema"":""public""
 				 }",NULL,"{
 								   ""tablename"":""test"",
@@ -89,7 +89,7 @@
 				 ""database"":""postgres"",
 				 ""user"":""postgres"",
 				 ""password_type"":""password"",
-				 ""password"":""csg00109"",
+				 ""password"":""***"",
 				 ""schema"":""public""
 				 }",NULL,"{
 								   ""tablename"":""test"",
@@ -110,7 +110,7 @@
 				 ""database"":""postgres"",
 				 ""user"":""postgres"",
 				 ""password_type"":""password"",
-				 ""password"":""csg00109"",
+				 ""password"":""***"",
 				 ""schema"":""public""
 				 }",NULL,"{
 								   ""tablename"":""test"",
@@ -173,11 +173,11 @@
 				 }","2024-03-05 21:25:25.540104",NULL
 29,"fileload","File","Table","test_aws_r",NULL,"{
 				 ""DBType"":""RedShift"",
-				 ""hostname"":""demo.243496286433.us-east-1.redshift-serverless.amazonaws.com"",
+				 ""hostname"":""host"",
 				 ""database"":""dev"",
 				 ""user"":""admin"",
 				 ""password_type"":""password"",
-				 ""password"":""Csg00109"",
+				 ""password"":""***"",
 				 ""port"":5439
 				 }",NULL,"{
 								   ""tablename"":""test"",
@@ -197,11 +197,11 @@
 				 }",NULL,"2024-03-05 22:52:51.466625",NULL
 32,"fileload","Table","file","test_aws_r_read","{
 				 ""DBType"":""RedShift"",
-				 ""hostname"":""demo.243496286433.us-east-1.redshift-serverless.amazonaws.com"",
+				 ""hostname"":""host"",
 				 ""database"":""dev"",
 				 ""user"":""admin"",
 				 ""password_type"":""password"",
-				 ""password"":""Csg00109"",
+				 ""password"":""***"",
 				 ""port"":5439
 				 }",NULL,"{
 								   ""tablename"":""test"",
@@ -391,7 +391,7 @@
 				 ""database"":""postgres"",
 				 ""user"":""postgres"",
 				 ""password_type"":""password"",
-				 ""password"":""csg00109"",
+				 ""password"":""***"",
 				 ""schema"":""public""
 				 }",NULL,"{
 								   ""tablename"":""test"",
@@ -404,7 +404,7 @@
 				 ""database"":""postgres"",
 				 ""user"":""postgres"",
 				 ""password_type"":""password"",
-				 ""password"":""csg00109"",
+				 ""password"":""***"",
 				 ""schema"":""public""
 				 }",NULL,"{
 								   ""tablename"":""test"",
@@ -417,7 +417,7 @@
 				 ""database"":""postgres"",
 				 ""user"":""postgres"",
 				 ""password_type"":""password"",
-				 ""password"":""csg00109"",
+				 ""password"":""***"",
 				 ""schema"":""public""
 				 }",NULL,"{
 								   ""tablename"":""test"",
@@ -445,7 +445,7 @@
 				 ""database"":""postgres"",
 				 ""user"":""postgres"",
 				 ""password_type"":""password"",
-				 ""password"":""csg00109"",
+				 ""password"":""***"",
 				 ""schema"":""public""
 				 }",NULL,"{
 								   ""tablename"":""test"",
@@ -474,7 +474,7 @@
 				 ""database"":""postgres"",
 				 ""user"":""postgres"",
 				 ""password_type"":""password"",
-				 ""password"":""csg00109"",
+				 ""password"":""***"",
 				 ""schema"":""public""
 				 }",NULL,"{
 								   ""tablename"":""test"",
@@ -502,7 +502,7 @@
 				 ""database"":""postgres"",
 				 ""user"":""postgres"",
 				 ""password_type"":""password"",
-				 ""password"":""csg00109"",
+				 ""password"":""***"",
 				 ""schema"":""public""
 				 }",NULL,"{
 								   ""tablename"":""test"",
@@ -530,7 +530,7 @@
 				 ""database"":""postgres"",
 				 ""user"":""postgres"",
 				 ""password_type"":""password"",
-				 ""password"":""csg00109"",
+				 ""password"":""***"",
 				 ""schema"":""public""
 				 }",NULL,"{
 								   ""tablename"":""test"",
@@ -561,7 +561,7 @@
 				 ""database"":""postgres"",
 				 ""user"":""postgres"",
 				 ""password_type"":""password"",
-				 ""password"":""csg00109"",
+				 ""password"":""***"",
 				 ""schema"":""public""
 				 }",NULL,"{
 								   ""tablename"":""test"",
